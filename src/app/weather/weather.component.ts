@@ -14,7 +14,7 @@ export class WeatherComponent implements OnInit {
   showSpinner = true;
   weatherForm!: FormGroup;
   current = this.cityList[0];
-
+  noOfDays = 5;
   constructor(
     public weatherService: WeatherService
   ) { }
@@ -34,7 +34,7 @@ export class WeatherComponent implements OnInit {
   }
 
   getWeather(city: string): void {
-    this.weatherService.getWeatherInfo(city).subscribe((res) => {
+    this.weatherService.getWeatherInfo(city, this.noOfDays).subscribe((res) => {
       if (res) {
         this.showSpinner = false;
         this.cityWeatherDetails = res.data;
