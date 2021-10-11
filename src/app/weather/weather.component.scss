@@ -1,0 +1,41 @@
+.header-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+.form-select {
+    background-color: #f9f9f9;
+}
+
+.modal {
+    .close-modal {
+        cursor: pointer;
+        font-size: 32px;
+        color: #ffffff;
+    }
+    .modal-content {
+        border: none;
+    }
+    .modal-title {
+        font-size: 32px;
+    }
+    .font-medium {
+        font-size: 18px;
+    }
+    .weather-info-wrapper {
+        margin-top: 30px;
+        .card {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            .weather-icon {
+                width: 90px;
+                height: 80px;
+            }
+        }
+    }
+    .btn-danger {
+        padding: 0.5rem 3rem;
+    }
+}
